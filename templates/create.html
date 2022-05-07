@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+<form action="" method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="作成する">
+
+</form>
+{% endblock content %}
+
+echo "# blogproject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ryusei04/blogproject.git
+git push -u origin main
+git remote add origin https://github.com/ryusei04/blogproject.git
+git branch -M main
+git push -u origin main
